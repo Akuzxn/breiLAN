@@ -1,0 +1,398 @@
+*{
+
+  user-select: none;
+}
+
+  :root {
+    --text: #f8f7f6;
+    --background: #000000;
+    --primary: #594731;
+    --secondary: #493E2D;
+    --accent: #A67E5B;
+  }
+
+
+
+
+body {
+  font-family: Space Mono;
+  font-weight: 400;
+  color: var(--text);
+  margin: 0;
+}
+
+h1, h2, h3, h4{
+  font-family: Space Mono;
+  font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+body, html {
+  background-color: var(--background);
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid white;
+}
+
+nav .nav-btns a{
+  transition: 0.2s;
+  margin-left: 50px;
+}
+
+nav .nav-btns a:hover{
+  border-bottom: 3px solid white;
+  color: #CA9B72;
+}
+
+nav .nav-btns h5{
+  font-family: Space Mono;
+}
+
+#info{
+  height: 230vh;
+  text-align: center;
+  
+}
+
+#info .img{
+  position: absolute;
+}
+
+
+
+#info h5 a{
+  font: Space mono;
+  border: 3px solid white;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+#info h5 a:hover{
+  border: 3px solid black;
+  padding: 10px;
+  color: black;
+  background-color: white;
+}
+
+#info .info-tekst p{
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  margin-left: 25%;
+}
+
+#FAQ {
+  height: 300vh;
+  text-align: center;
+  background-color: #201a13;
+}
+
+#FAQ .FAQ {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+#FAQ .FAQ-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.FAQ-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.FAQul{
+  list-style: none;
+  justify-content: space-between;
+  padding: 70px;
+  padding-bottom: 0;
+  max-width: 200px;
+}
+
+.FAQul2 {
+  list-style: none;
+  padding: 70px;
+  justify-content: space-between;
+  max-width: 200px;
+  padding-bottom: 0;
+}
+
+#FAQ .FAQ ul li{
+  list-style: none;
+}
+
+#FAQ .FAQ
+
+#produkter{
+  height: 230vh;
+  background-color: #140c00;
+}
+
+#produkter .produkter-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#produkter .produkter-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+
+}
+
+@media (max-width: 1800px){
+  #produkter .produkter-container{
+    scale: 0.8;
+  }
+}
+
+#produkter .produkter-container h3{
+  font-family: Space Mono;
+  text-align: center;
+}
+
+#produkter .produkter-container .produkt{
+
+  left: 18rem;
+  top: 2rem;
+  background-color: transparent;
+  padding: 0 1rem;
+  padding-top: 1%;
+  border: solid black;
+}
+
+#produkter .produkter-container .produkt h1, h2, h4{
+  left: 18rem;
+  top: 2rem;
+  padding: 0 1rem;
+}
+
+#produkter .produkter-container h5 a{
+  font-family: Space Mono;
+  transition: 0.2s;
+  color: rgb(255, 255, 255);
+}
+
+#produkter .produkter-container h5 a:hover{
+  border-bottom: 3px solid white;
+  color: #CA9B72;
+}
+
+#kontakt{
+  background-color: #493e2d3a;
+  height: 180vh;
+  padding-top: 30%;
+}
+
+#kontakt .kontakt_container{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  place-content: center;
+}
+
+#kontakt .kontakt_border{
+  border: 5px solid white ;
+  padding-right: 100px;
+  padding-left: 100px;
+  background-color: #493E2D;
+}
+
+#kontakt .kontakt_container label{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  text-align: center;
+  margin: 0;
+
+}
+
+#kontakt .kontakt_container input{
+
+  display: flex;
+  flex-direction: flex;
+  align-items: center;
+  padding-top: 20px;
+  text-align: center;
+  margin: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  background-color: #ffffff;
+}
+
+#kontakt .kontakt_container input input:valid{
+  color: red;
+}
+
+#kontakt .kontakt_container .country_selec{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  margin: 0;
+}
+
+#kontakt .kontakt_container .submit{
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  place-content: center;
+}
+
+select {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  outline: 0;
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid crimson;
+  padding: 4px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+textarea{
+  width: 96.5%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#kontakt button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  margin-top: 20%;
+  transition: 0.4s;
+}
+
+#kontakt button:hover{
+  color: black;
+  background-color: white;
+}
+
+footer{
+  height: 70vh;
+  text-align: center;
+  background-color: #000000;
+}
+
+footer .links a{
+  border-bottom: 5px solid white;
+  transition: 0.3s;
+}
+
+footer .links a:hover{
+  color: #CA9B72;
+}
+
+footer .w{
+  color: black;
+}
+
+footer .start a{
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+footer .start a:hover{
+  color: #CA9B72;
+}
+
+.popup{
+  width: 300px;
+  background: rgb(0, 0, 0);
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%)scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #ffffff;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+  height: 90%;
+}
+
+.popup img{
+  width: 50%;
+}
+
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%)scale(1);
+  position: fixed;
+}
+
+.popup img{
+  margin-top: 5%;
+  padding-top: 10%;
+}
+
+.apple {
+  list-style: none;
+  justify-content: space-between;
+}
+
+li {
+  padding-bottom: 50px;
+  font-weight: 400;
+}
+
+li .Bracket {
+  p {
+    font-size: 40px;
+  }
+}
